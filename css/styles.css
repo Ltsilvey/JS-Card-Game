@@ -1,0 +1,131 @@
+
+
+body {
+  margin: 20px 0;
+  background-image: url("../memory/Krill.jpg")
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background-color: orange;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: blueviolet /* Fallback color */
+
+}
+.modal-content{
+  background-color:aquamarine
+}
+.title{
+  font-size: 200%;
+  font-family: 'Courier New', Courier, monospace;
+}
+.modal-close-btn{
+  cursor: pointer;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.match .front {
+  background: #6589F9 !important;
+}
+.score-panel {
+  border-style: solid;
+  border-width: 5px;
+  border-color: whitesmoke;
+  text-align: left;
+  width: 275px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.moves{
+  color:yellow;
+  font-size: 200%;
+}
+.score-panel .stars {
+  color:gold;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+  font-size: 200%;
+  list-style: none;
+  display: inline-block;
+}
+
+.score-panel .restart {
+  font-size: 150%;
+  color: white;
+  cursor: pointer;
+}

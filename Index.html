@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="urf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="css/styles.css" />
+  </head>
+  <body>
+    <section class = "container">
+      <h1 class ="title"><b>Memory Game</b></span></h1>
+      <h2 id= "safeTimerDisplay"></h2>
+      <div id="game"></div>
+    </section>
+    <section class="score-panel">
+        <ul class="stars">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+        <div class="moves">
+          <span class="moves-count">0</span>
+          <span class="moves-text"> Moves</span>
+        </div>
+        <div class ="restart">Click to Restart
+        		<i class="fa fa-repeat"></i>
+        	</div>
+      </section>
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="modal-close-btn">&times;</span>
+              <h2>Congratulations!</h2>
+          </div>
+          <div class="modal-body">
+              <h3>You completed the game successfully in <span class = "moves-count"></span></h3>
+              <h3>Time to complete was<span class = "modalTimerDisplay"></span> </h3>
+              <h3>Your rating is
+                  <span class="rating"></span> out of 3.</h3>
+              </p>
+          </div>
+          <div class="replay">
+              <button id="replayButton" type="button" class="btn btn-primary">
+                  Replay!
+              </button>
+          </div>
+      </div>
+  </div>
+    <script src="Javascript/index.js"></script>
+  </body>
+</html> 
